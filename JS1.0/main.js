@@ -1,6 +1,6 @@
 let hi = 'Hello, World!';
 
-const i = prompt('Введи возраст');
+const i = prompt('Введите возраст');
 
 console.log(i);
 
