@@ -69,5 +69,5 @@ class NameReverser {
 }
 
 // Пример использования класса:
-const myName = new NameReverser('Andrew');
+const myName = new NameReverser('Albert');
 console.log(myName.reverse());

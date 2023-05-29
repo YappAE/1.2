@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home3() {
     let c = 1 + 2;
-    let myName = 'Andrew'
+    let myName = 'Albert'
   return (
     <div>
         <p> 1 + 2 = {c}</p>

@@ -8,10 +8,10 @@ let num2 = prompt('Ведите 2-ое число:');
 let slogenie = +num1 + +num2;
 let vychitanie = num1 - num2;
 let umnojenie = num1 * num2;
-let divide = num1 / num2;
-let module = num1 % num2;
+let delcel = num1 / num2;
+let delostatok = num1 % num2;
 
-console.log(slogenie, vychitanie, umnojenie, ddivideivision, module);
+console.log(slogenie, vychitanie, umnojenie, delcel, delostatok);
 
 // 3.Необходимо попросить  пользователя задумать число. Затем он должен  умножить это число  на 2 и прибавить к полученному результату 7. То, что вышло в итоге, нужно ввести в диалоговом окне prompt(). Вы должны выдать пользователю, какое число он задумал.
 let num = prompt(
@@ -26,7 +26,8 @@ let userName = prompt('Введите имя:');
 let birhtYear = prompt('Введите год рождения:');
 
 let age = new Date().getFullYear() - birhtYear;
-document.write(`${yourNumber}: ${age}`);
+document.write(`${userName}: ${age}`);
+alert(typeof(age));
 
 // 5.Сохраните калькулятор и отправьте на GitHub в репозиторий Student, используя формат в названии Фамилия(латинскими буквами)_1.
 // git add .

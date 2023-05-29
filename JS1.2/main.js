@@ -1,18 +1,18 @@
 // 1. Реализовать представленную блок-схему посредством Java Script
 
-let clues = 0;
-function answer2(riddle, answer) {
-  if (riddle === answer) {
-    clues += 1;
-    return `Верно, ${clues}`;
+let otgadki = 0;
+function orvet2(zagadka, otvet) {
+  if (zagadka === otvet) {
+    otgadki += 1;
+    return `Верно, ${otgadki}`;
   } else {
-    return `Ошибка, ${clues}`;
+    return `Ошибка, ${otgadki}`;
   }
 }
 
-console.log(answer2('n', 'n'));
-console.log(answer2('n', 'n'));
-console.log(answer2('n', 'c'));
+console.log(orvet2('n', 'n'));
+console.log(orvet2('n', 'n'));
+console.log(orvet2('n', 'c'));
 
 // 2.Напишите программу на Java Script, которая считает от 1 до 10.
 
@@ -24,7 +24,7 @@ for (let i = 1; i <= 10; i++) {
 
 let question = '';
 while (question != 1) {
-  question = prompt('«Еще по одной');
+  question = prompt('«Еще по одной?»');
 }
 
 // 4.Вычислите факториал числа (вашего порядкового номера в журнале).
@@ -33,41 +33,33 @@ function factorial(num) {
   if (num === 0) {
     return 1;
   }
-  return n * factorial(n - 1);
+  return num * factorial(num - 1);
 }
 
 console.log(factorial(4));
 
+
 // 5.Напишите программу, которая проверяет вашу фамилию на палиндром.
 
-function isPalindrome(string) {
-  const length = string.length;
-  for (let i = 0; i < Math.floor(length / 2); i++) {
-    if (string[i] !== string[length - 1 - i]) {
-      return false;
-    }
+function isPolidrom(fio) {
+  if (fio.split('').reverse().join('') === fio) {
+    return true;
+  } else {
+    return false;
   }
-  return true;
 }
 
-console.log(isPalindrome('racecar'));
+// Пример isPolidrom ('madam')
 
 // 6.Выведите все простые числа от 1 до вашего порядкового номера в журнале.
 
-function simpleNumbers(num) {
-  if (num === 1) {
-    return false;
-  }
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
-      return false;
+function simpleNumber(num) {
+  if (num / 1 && num / num) {
+    for (let i = 1; i <= num; i++) {
+      console.log(i);
     }
   }
-  return true;
+  return false;
 }
 
-for (let i = 1; i <= 4; i++) {
-  if (simpleNumbers(i)) {
-    console.log(i);
-  }
-}
+// Пример simpleNumber ('16')
