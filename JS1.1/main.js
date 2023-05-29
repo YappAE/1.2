@@ -5,24 +5,24 @@ let number = prompt('Введите число:');
 let num1 = prompt('Ведите 1-ое число:');
 let num2 = prompt('Ведите 2-ое число:');
 
-let add = +num1 + +num2;
-let subtract = num1 - num2;
-let multiplicate = num1 * num2;
+let slogenie = +num1 + +num2;
+let vychitanie = num1 - num2;
+let umnojenie = num1 * num2;
 let divide = num1 / num2;
 let module = num1 % num2;
 
-console.log(add, subtract, multiplicate, ddivideivision, module);
+console.log(slogenie, vychitanie, umnojenie, ddivideivision, module);
 
 // 3.Необходимо попросить  пользователя задумать число. Затем он должен  умножить это число  на 2 и прибавить к полученному результату 7. То, что вышло в итоге, нужно ввести в диалоговом окне prompt(). Вы должны выдать пользователю, какое число он задумал.
 let num = prompt(
-  'задумать число,  Затем он должен  умножить это число  на 2 и прибавить к полученному результату 7. Введите ваш результат:'
+  'Задумайте число,  затем умножьте это число  на 2 и прибавьте к полученному результату 7. Введите ваш ответ:'
 );
 
 let yourNumber = (num - 7) / 2;
-alert(`Ваше число: ${yourNumber}.`);
+alert(`Число, которое Вы загадали: ${yourNumber}.`);
 
 // 4.С помощью метода prompt() получите сначала имя пользователя, затем год его рождения и сохраните в 2 переменные. Вычислите возраст пользователя, и выведите его в абзаце с помощью document.write() в таком формате "Антон: 24".
-let userName = prompt('Введите имя пользователя:');
+let userName = prompt('Введите имя:');
 let birhtYear = prompt('Введите год рождения:');
 
 let age = new Date().getFullYear() - birhtYear;

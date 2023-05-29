@@ -1,11 +1,11 @@
-let hi = 'Hello, World!';
+let hello = 'Hello, World!';
 
-const i = prompt('Введите возраст');
+const a = prompt('Введите число');
 
-console.log(i);
+console.log(a);
 
-console.log(hi);
+console.log(hello);
 
 let h1 = document.getElementById('title');
 
-h1.innerHTML = hi;
+h1.innerHTML = hello;
