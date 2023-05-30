@@ -129,7 +129,7 @@ let user = new User1('Тимур');
 alert(user.name); // Тимур
 alert(user.isAdmin); // false
 // 5.Используя конструктор, создайте объект – студент. Передайте конструктору параметры, определяющие, как создавать объект, и что в него записывать:
-function User(name) {
+function user(name) {
   this.name = name;
   this.sayHi = function () {
     alert('Меня зовут: ' + this.name);
